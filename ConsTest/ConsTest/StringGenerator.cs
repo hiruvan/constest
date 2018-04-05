@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsTest
 {
-    public class Class1
+    public class StringGenerator
     {
         static int GetRandom()
         {
@@ -28,21 +28,14 @@ namespace ConsTest
         }
         static string GenerateString(int iter)
         {
-            var chars = "ABCDEFGHIKJKLMNOPQRSTUVWXYZ11";
+            var chars = "ABCDEFGHIKJKLMNOPQRSTUVWXYZ";
             Random rnd = new Random(iter);
             int i = 0;
             int charQuan = rnd.Next(1, 10);
             string myString = "";
             while (i <= charQuan)
             {
-                if (i < charQuan)
-                {
-                    myString = myString + chars[rnd.Next(chars.Length)] + "+";
-                }
-                else
-                {
-                    myString = myString + chars[rnd.Next(chars.Length)];
-                }
+                myString = myString + chars[rnd.Next(chars.Length)] + "+";
                 i++;
             }
             return myString;
