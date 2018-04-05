@@ -28,7 +28,7 @@ namespace ConsTest
         }
         static string GenerateString(int iter)
         {
-            var chars = "ABCDEFGHIKJKLMNOPQRSTUVWXYZ1";
+            var chars = "ABCDEFGHIKJKLMNOPQRSTUVWXYZ11";
             Random rnd = new Random(iter);
             int i = 0;
             int charQuan = rnd.Next(1, 10);
