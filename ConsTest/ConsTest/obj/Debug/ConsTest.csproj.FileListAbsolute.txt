@@ -5,3 +5,6 @@ C:\Users\encinoldo\Documents\Visual Studio 2015\Projects\ConsTest\ConsTest\bin\D
 C:\Users\encinoldo\Documents\Visual Studio 2015\Projects\ConsTest\ConsTest\obj\Debug\ConsTest.exe
 D:\Work\git\ConsTest\ConsTest\ConsTest\obj\Debug\ConsTest.exe
 D:\Work\git\ConsTest\ConsTest\ConsTest\obj\Debug\ConsTest.pdb
+D:\Work\git\ConsTest\ConsTest\ConsTest\obj\Debug\ConsTest.csprojResolveAssemblyReference.cache
+D:\Work\git\ConsTest\ConsTest\ConsTest\bin\Debug\ConsTest.exe
+D:\Work\git\ConsTest\ConsTest\ConsTest\bin\Debug\ConsTest.pdb

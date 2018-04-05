@@ -6,23 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsTest
 {
-    public class StringGenerator
+    class StringGenerator
     {
-        static int GetRandom()
+        public StringGenerator(int StringQuantity)
         {
-            Random rnd = new Random();
-            int value = rnd.Next(1, 10);
-            return value;
-        }
-        public static void Main()
-        {
-            Console.Write("N = ");
-            string nVar = Console.ReadLine();
-            int nVarConverted = Convert.ToInt32(nVar);
             int iter = 1;
-            while (iter <= nVarConverted)
+            while (iter <= StringQuantity)
             {
-                Console.WriteLine(GenerateString(iter));
+                Program Result = new Program(GenerateString(iter));
                 iter++;
             }
         }
@@ -35,7 +26,11 @@ namespace ConsTest
             string myString = "";
             while (i <= charQuan)
             {
-                myString = myString + chars[rnd.Next(chars.Length)] + "+";
+                myString = myString + chars[rnd.Next(chars.Length)];
+                if (i != charQuan)
+                {
+                    myString = myString + "+";
+                }
                 i++;
             }
             return myString;
